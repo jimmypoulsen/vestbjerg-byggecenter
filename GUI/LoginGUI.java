@@ -142,10 +142,6 @@ public class LoginGUI extends JFrame {
 			addTestData();
 			testDataAdded = true;
 		}
-		
-		String test = "Hammer hammer FEDT";
-		test = test.toLowerCase();
-		System.out.print(test);
 	}
 
 	private void performLogin() {

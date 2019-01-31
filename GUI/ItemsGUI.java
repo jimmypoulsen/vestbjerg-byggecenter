@@ -42,6 +42,7 @@ public class ItemsGUI extends JPanel {
 	private JTextField txtItemName;
 	private ItemTableModel itemTableModel;
 	private JTable itemsTable;
+	private JButton btnSearch;
 	
 	public static ItemsGUI getInstance() {
 		if(instance == null)
@@ -92,7 +93,7 @@ public class ItemsGUI extends JPanel {
 		panel.add(txtItemName, gbc_txtItemName);
 		txtItemName.setColumns(10);
 		
-		JButton btnSearch = new JButton("Search");
+		btnSearch = new JButton("Search");
 		btnSearch.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				searchForItem();
